@@ -1,0 +1,22 @@
+# Composer
+#-------------------------
+composer.lock
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+# Sublime Text cache files
+#-------------------------
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# MAC OS Specific files
+#-------------------------
+.DS_Store
+__MACOSX/*
+
