@@ -17,6 +17,12 @@ file 'LICENSE', which is part of this source code package.
 </head>
 <body>
 
+<!--CSS Spinner-->
+ <div class="spinner-wrapper">
+   <div class="cube1"></div>
+   <div class="cube2"></div>
+ </div>
+
   <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
     <div class="container">
       <!-- Brand/logo -->
@@ -59,10 +65,16 @@ file 'LICENSE', which is part of this source code package.
 				</div>
 			</div>
 		</main>
+    
 		<script src="assets/js/three.min.js"></script>
 		<script src="assets/js/perlin.js"></script>
 		<script src="assets/js/TweenMax.min.js"></script>
 		<script src="assets/js/scripts.js"></script>
+		<script>
+		$(function() {
+			$('.spinner-wrapper').fadeOut("slow");
+		});
+		</script>
 
 </body>
 </html>
