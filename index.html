@@ -3,13 +3,66 @@
 This file is subject to the terms and conditions defined in
 file 'LICENSE', which is part of this source code package.
 -->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+<html lang="en">
+<head>
+  <title>TRACE CEA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+    <div class="container">
+      <!-- Brand/logo -->
+      <a href="#"><img src="https://avatars1.githubusercontent.com/u/34028707?s=200&v=4" alt="TRACE CEA" style="width:68px" /></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-res" aria-controls="navbar-res" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-res">
+        <ul class="ml-auto navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+		<main>
+			<div class="content">
+				<canvas class="scene scene--full" id="scene"></canvas>
+				<div class="content__inner">
+					<h2 class="content__title">TRACE</h2>
+					<h3 class="content__subtitle">COLLEGE OF ENGINEERING ADOOR</h3>
+				</div>
+			</div>
+		</main>
+		<script src="assets/js/three.min.js"></script>
+		<script src="assets/js/perlin.js"></script>
+		<script src="assets/js/TweenMax.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
+
+</body>
 </html>

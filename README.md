@@ -1,7 +1,7 @@
 # TRACE CEA
 [cea.ac.in/activities/trace.html](http://cea.ac.in/activities/trace.html)
 
-![TRACE CEA](http://cea.ac.in/images/trace2.jpg)
+![TRACE CEA](https://github.com/tracecea/tracecea.github.io/blob/master/assets/img/logo.png?raw=true)
 
 The most regal and advanced race of species, who are always ahead of their peers in terms of technology and advancement. Each year TRACE conducts a fest meant for the technocrats of CEA.
 
