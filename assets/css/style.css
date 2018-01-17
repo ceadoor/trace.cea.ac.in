@@ -110,3 +110,26 @@ main {
 		font-size: 0.85em;
 	}
 }
+
+/* about */
+body {
+    background-color: black;
+}
+h1 {
+    color: white;
+    font-size: 150%;
+    text-indent: 300px
+}
+p {
+    color: white;
+    font-size: 120%;
+    text-indent: 100px;
+    width: 1290px;
+    height: 300px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
