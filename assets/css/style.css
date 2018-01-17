@@ -36,6 +36,14 @@ body {
 	font: 20px sans-serif;
 }
 
+.logo-enlarge { 
+	transition: all .2s ease-in-out;
+}
+
+.logo-enlarge:hover {
+	transform: scale(1.1);
+}
+
 main {
 	position: relative;
 	width: 100%;
