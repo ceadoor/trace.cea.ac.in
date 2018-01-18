@@ -17,11 +17,16 @@ file 'LICENSE', which is part of this source code package.
 </head>
 <body>
 
+<!--CSS Spinner-->
+ <div class="spinner-wrapper">
+   <div class="cube1"></div>
+   <div class="cube2"></div>
+ </div>
+
   <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
     <div class="container">
       <!-- Brand/logo -->
-      <a href="#"><img src="https://avatars1.githubusercontent.com/u/34028707?s=200&v=4" alt="TRACE CEA" style="width:68px" /></a>
-
+      <a class="logo-enlarge" href="#"><img src="https://avatars1.githubusercontent.com/u/34028707?s=200&v=4" alt="TRACE CEA" style="width:68px" /></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-res" aria-controls="navbar-res" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -59,10 +64,16 @@ file 'LICENSE', which is part of this source code package.
 				</div>
 			</div>
 		</main>
+    
 		<script src="assets/js/three.min.js"></script>
 		<script src="assets/js/perlin.js"></script>
 		<script src="assets/js/TweenMax.min.js"></script>
 		<script src="assets/js/scripts.js"></script>
+		<script>
+		$(function() {
+			$('.spinner-wrapper').fadeOut("slow");
+		});
+		</script>
 
 </body>
 </html>
