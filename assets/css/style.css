@@ -29,14 +29,15 @@ body {
 }
 .navbar-light .navbar-nav .nav-link:hover {
     color: #ff6666;
+		text-decoration: underline;
 }
 
 .navbar-light .navbar-nav .nav-link:focus {
     color: #fff;
-	font: 20px sans-serif;
+		font: 20px sans-serif;
 }
 
-.logo-enlarge { 
+.logo-enlarge {
 	transition: all .2s ease-in-out;
 }
 
@@ -146,19 +147,19 @@ main {
 }
 
 @keyframes sk-cubemove {
-	25% { 
+	25% {
 		transform: translateX(42px) rotate(-90deg) scale(0.5);
 		-webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
-	} 50% { 
+	} 50% {
 		transform: translateX(42px) translateY(42px) rotate(-179deg);
 		-webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
-	} 50.1% { 
+	} 50.1% {
 		transform: translateX(42px) translateY(42px) rotate(-180deg);
 		-webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
-	} 75% { 
+	} 75% {
 		transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
 		-webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
-	} 100% { 
+	} 100% {
 		transform: rotate(-360deg);
 		-webkit-transform: rotate(-360deg);
 	}
