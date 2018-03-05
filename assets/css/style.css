@@ -7,6 +7,8 @@ file 'LICENSE.txt', which is part of this source code package.
     Author     : jobinrjohnson
 */
 
+/* ------------------------------------------- */
+
 body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 500;
@@ -19,6 +21,8 @@ body {
 	margin: 0;
 }
 
+/* ---------------NAV BAR--------------- */
+
 .navbar-light
 {
   background : transparent !important;
@@ -30,11 +34,13 @@ body {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #ff6666;
 }
-
+/*
 .navbar-light .navbar-nav .nav-link:focus {
   color: #fff;
 	font: 20px sans-serif;
-}
+} */
+
+/* -----------TRACE LOGO ANIMATION----------- */
 
 .logo-enlarge {
 	transition: all .2s ease-in-out;
@@ -43,6 +49,8 @@ body {
 .logo-enlarge:hover {
 	transform: scale(1.1);
 }
+
+/* ------------------------------------------- */
 
 main {
 	position: relative;
@@ -60,6 +68,7 @@ main {
 }
 
 /* Canvas positions */
+
 .content__inner {
 	grid-area: 1 / 1 / 1 / 1;
 	position: relative;
@@ -117,15 +126,16 @@ main {
 		font-size: 3.5em;
 	}
 	.content__subtitle {
-		font-size: 0.85em;
+		font-size: 0.9em;
+		text-align: center;
+		letter-spacing: 0.25em;
 	}
 }
 
-
-/*----PRELOADER----*/
+/* -------------PRELOADER------------- */
 
 .cube1, .cube2 {
-	background-color: #333;
+	background-color: #fff;
 	width: 15px;
 	height: 15px;
 	position: absolute;
@@ -166,7 +176,7 @@ main {
 	}
 }
 
-/*HIDES THE LOADING ELEMENTS FOR THE SPINNER*/
+/* ---HIDES THE LOADING ELEMENTS FOR THE SPINNER--- */
 
 .spinner-wrapper {
 	position: fixed;
@@ -174,40 +184,61 @@ main {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #fff;
+	background-color: #000;
 	z-index: 999999;
 }
 
-/* the about page */
+
+/* --------------ABOUT PAGE------	-------- */
 
 #about {
-		background-image: url('../img/keyboard.jpeg');
-		background-size: cover;
-		background-repeat: no-repeat;
+		height: 100vh;
 		background-color: #000;
 }
 
 .part {
-	width: 90%;
-	margin: 5px 5%;
+	width: 86%;
+	margin: 0 7%;
+	padding-top: 5%;	
 }
 
 .mast {
 	font-family: 'Bree Serif', serif;
 	color: red;
-	font-size: 35px;
-	padding-top: 3%;
-  text-align: center;
+	font-size: 3.5em;
+	letter-spacing: 2px;
+	padding-top: 6%;
+ 	text-align: center;
 }
 
 .sub {
 	color: white;
+	font-size: 2em;
+	letter-spacing: 1px;
 	font-family: Poppins;
-  text-align: center;
+	text-align: center;
+	padding-top: 12px;
 }
 
 blockquote {
-	font-size: 18px;
+	font-size: 1.25em;
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 14px;
 	text-align: justify;
 	color: rgba(255, 255, 255, 0.8);
 }
+
+@media screen and (max-width: 55em) {
+	.mast {
+		font-size: 2.5em;
+	}
+	.sub {
+		font-size: 1.25em;
+	}
+	blockquote {
+		font-size: 0.85em;
+	}
+}
+
+/* ------------------------------------------- */
