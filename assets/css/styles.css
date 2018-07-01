@@ -14,6 +14,12 @@ body, html {
     padding: 0;
 }
 
+html, body, header, nav, section, div,
+h1, h2, h3, p, ul, li, button,
+span {
+    transition: all .2s ease-out;
+}
+
 body {
     background-color: #000;
     font-family: 'Roboto', sans-serif;
@@ -27,42 +33,47 @@ body {
 
 /* ------------------------------------------- */
 
-.header {
+header {
     top: 0 !important;
     position: fixed;
     background: #0d0d0d;
     width: 100%;
 }
 
-.header nav ul {
+header nav ul {
     list-style-type: none;
     float: right;  
 }
 
-.header nav ul {
+header nav ul {
     padding: 18px 5% 0 0;
 }
 
-.header img {
+header img {
     float: left;
     margin: 3px 0 3px 9%;
 }
 
-.nav-item {
+header nav li{
     text-decoration: none;
     float: left;
     padding: 0 30px;
     letter-spacing: 3px;
     font-weight: 800;
-    font-size: 15px;
-
+	font-size: 15px;
+	cursor: pointer;
 }
 
-.nav-link {
+header nav a {
     text-decoration: none;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	padding: 10px 0;
     font-family: 'Raleway', sans-serif;
-    color: #fff;
+	color: #fff;
+}
+
+header nav li:hover a{
+	border-bottom: 2px solid #fff;
 
 }
 
@@ -71,32 +82,8 @@ body {
 #home {
     height: 100vh;
 }
-/* 
-.main h2 {
-    padding-top: 70px;
-    font-size: 10vw;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-.main h3 {
-
-    font-size: 1.25em;
-    text-transform: uppercase;
-    letter-spacing: 0.45em;
-    color: #fff;
-    text-align: center;
-    
-}
-
-*/
 
 .content {
-	position: relative;
 	display: grid;
 	justify-content: center;
 	align-items: center;
@@ -196,3 +183,14 @@ body {
 	z-index: 999999;
 }
 
+/* ------------------------------------------- */
+
+.logo-hover img {
+	transition: all .2s ease-in-out;
+}
+
+.logo-hover:hover img {
+	transform: scale(1.1);
+}
+
+/* ------------------------------------------- */
