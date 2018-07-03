@@ -42,11 +42,8 @@ header {
 
 header nav ul {
     list-style-type: none;
-    float: right;  
-}
-
-header nav ul {
-    padding: 18px 5% 0 0;
+	float: right;  
+	padding: 18px 5% 0 0;
 }
 
 header img {
@@ -80,7 +77,13 @@ header nav li:hover a{
 /* ------------------------------------------- */
 
 #home {
-    height: 100vh;
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.05)), url('../img/bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+	background-size: cover;
+
 }
 
 .content {
@@ -96,7 +99,6 @@ header nav li:hover a{
 
 .content__inner {
 	grid-area: 1 / 1 / 1 / 1;
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -194,3 +196,10 @@ header nav li:hover a{
 }
 
 /* ------------------------------------------- */
+
+#about {
+	background-color: #fff;
+	height: 70vh;
+	margin-top: 0;
+	padding: 0;
+}
