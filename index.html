@@ -10,6 +10,7 @@ file 'LICENSE', which is part of this source code package.
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/styles.css">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800|Roboto" rel="stylesheet"> 
 </head>
@@ -22,20 +23,25 @@ file 'LICENSE', which is part of this source code package.
    <div class="cube2"></div>
  </div>
 
+ <!-- HEADER -->
+ 
  <header>
     <a class="logo-hover" href="#"><img src="https://raw.githubusercontent.com/ceadoor/tracecea/master/assets/img/logo.png?s=200&v=4" alt="TRACE CEA" style="width:72px" /></a>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
         <li><a href="#">Gallery</a></li>
-        <li><a href="#">News</a></li>
         <li><a href="#">Events</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
 </header>
   
+<!-- ENDS HEADER -->
+
+<!-- HOME -->
   <section id="home">
 
     <section id="container">
@@ -51,6 +57,9 @@ file 'LICENSE', which is part of this source code package.
 
   </section>
     
+  <!-- ENDS HOME -->
+
+  <!-- ABOUT -->
   <section id="about">
       <section id="container">
 
@@ -82,22 +91,49 @@ file 'LICENSE', which is part of this source code package.
       </section>
   </section>
 
-  <section id="info">
+  <!-- ENDS ABOUT -->
 
-    
+  <!-- FEATURES -->
+  <section id="features">
+
+          <div class="d1">
+            <i data-feather="box" class="ico"></i>
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Exercitation tempor id velit magna magna esse in laboris laborum qui occaecat do nostrud.</p>
+          </div>
+
+          <div class="d2">
+            <i data-feather="settings" class="ico"></i>
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Quis sint ullamco magna non Lorem sunt labore dolore laboris enim.</p>
+          </div>
+
+          <div class="d3">
+            <i data-feather="layers" class="ico"></i>
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Nisi consequat adipisicing pariatur sit sunt adipisicing.</p>
+          </div>
 
   </section>
 
+  <!-- ENDS FEATURES -->
+
+  <!-- FOOTER -->
   <section id="footer">
       
   </section>
+  <!-- ENDS FOOTER -->
 
+  <!-- PRELOADER SCRIPT -->
 		<script>
 		$(function() {
 			$('.spinner-wrapper').fadeOut("slow");
 		});
 		</script>
 
+  <!-- FEATHER ICONS SCRIPT-->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>feather.replace()</script>
 
 </body>
 </html>

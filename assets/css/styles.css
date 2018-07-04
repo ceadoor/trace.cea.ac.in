@@ -11,7 +11,8 @@ file 'LICENSE.txt', which is part of this source code package.
 
 body, html {
     margin: 0;
-    padding: 0;
+	padding: 0;
+	overflow-x: hidden;
 }
 
 html, body, header, nav, section, div,
@@ -99,7 +100,7 @@ header nav li:hover a{
 
 .content__title {
 	font-size: 10vw;
-	font-weight: normal;
+	font-weight: 700;
     color: #fff;
     font-family: 'Raleway', sans-serif;
 	margin: 0;
@@ -107,7 +108,7 @@ header nav li:hover a{
 }
 
 .content__subtitle {
-	font-size: 1.25em;
+	font-size: 1.26em;
     color: #fff;
 	padding: 0.45em 0;
 	line-height: 1;
@@ -265,7 +266,45 @@ header nav li:hover a{
 
 /* ------------------------------------------- */
 
-#info {
-	height: 50vh;
+#features {
+	height: 28vh;
 	background-color: #000;
+	color: #fff;
+}
+
+.d1, .d2, .d3 {
+	float: left;
+	text-align: center;
+	width: 23%;
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+
+.d1 {
+	padding-left: 10%;
+}
+
+.d3 {
+	padding-right: 10%;
+}
+
+.d2 {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.d1 p, .d2 p, .d3 p {
+	line-height: 25px;
+}
+
+.ico {
+	width: 38px;
+	height: 38px;
+}
+
+/* ------------------------------------------- */
+
+#footer {
+	height: 50vh;
+	background-color: #fff;
 }
