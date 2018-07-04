@@ -117,6 +117,11 @@ header nav li:hover a{
 	text-transform: uppercase;
 }
 
+.down {
+
+	padding-left: 33%;
+}
+
 /* -------------PRELOADER------------- */
 
 .cube1, .cube2 {
@@ -349,7 +354,7 @@ header nav li:hover a{
 /* ------------------------------------------- */
 
 #footer {
-	height: 40vh;
+	height: 43vh;
 	background-color: #000;
 	font-family: 'Raleway', sans-serif;
 }
@@ -357,7 +362,7 @@ header nav li:hover a{
 .f1, .f2, .f3 {
 	float: left;
 	width: 33%;
-	padding-top: 35px;
+	padding-top: 45px;
 	padding-bottom: 20px; 
 }
 
@@ -376,6 +381,11 @@ header nav li:hover a{
 .f2 {
 	padding-left: 5%;
 	padding-right: 5%;
+}
+
+.f2 h2 {
+	text-transform: uppercase;
+	font-size: 17px;
 }
 
 .f2 ul {
@@ -402,6 +412,11 @@ header nav li:hover a{
 	line-height: 25px;
 }
 
+.f3 h2 {
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
 .f3 p {
 	margin: 0;
 }
@@ -409,5 +424,14 @@ header nav li:hover a{
 .f3 a {
 	text-decoration: none;
 	color: #999999;
+	padding-left: 10px;
+}
+
+.icons {
+	width: 15px;
+	height: 15px;
+	margin-top: 7px;
+	color: #fff;
+	margin-right: 10px;
 }
 /* ------------------------------------------- */
