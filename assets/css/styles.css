@@ -84,19 +84,16 @@ header nav li:hover a{
     background-position: center;
     background-attachment: fixed;
 	background-size: cover;
-
 }
 
 .content {
 	padding-top: 35vh;
 }
 
-
 .content__inner {
 	display: flex;
 	flex-direction: column;
 }
-
 
 .content__title {
 	font-size: 10vw;
@@ -189,10 +186,10 @@ header nav li:hover a{
 
 #about {
 	background-color: #fff;
-	height: 70vh;
+	min-height: 75vh;
 }
 
-.ab1, .ab2 {
+.abc {
 	padding: 20px 0;
 }
 
@@ -205,7 +202,6 @@ header nav li:hover a{
 	text-align: justify;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	padding-bottom: 15px;
 }
 
 .ab1 h2 {
@@ -275,8 +271,8 @@ header nav li:hover a{
 .d1, .d2, .d3 {
 	float: left;
 	text-align: center;
-	width: 23%;
-	padding-top: 20px;
+	width: 33%;
+	padding-top: 25px;
 	padding-bottom: 20px; 
 }
 
@@ -304,7 +300,51 @@ header nav li:hover a{
 
 /* ------------------------------------------- */
 
+#gallery {
+	clear: both;
+	min-height: 100vh;
+	background-color: #fff;
+	padding-bottom: 25px;
+}
+
+#gallery h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 45px;
+	line-height: 40px;
+	text-align: center;
+	padding-top: 70px;
+}
+
+#gallery p {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	font-size: 100%;
+	padding-bottom: 70px;
+}
+* {
+    box-sizing: border-box;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	
+}
+
+/* ------------------------------------------- */
+
 #footer {
 	height: 50vh;
-	background-color: #fff;
+	background-color: #000;
 }
