@@ -27,8 +27,8 @@ body {
 }
 
 #container {
-    width: 80%;
-    margin: 10px 10%;
+    width: 86%;
+    margin: 10px 7%;
 }
 
 /* ------------------------------------------- */
@@ -78,7 +78,7 @@ header nav li:hover a{
 
 #home {
 	height: 100vh;
-	background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.05)), url('../img/bg.jpeg');
+	background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.05)), url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -87,23 +87,13 @@ header nav li:hover a{
 }
 
 .content {
-	display: grid;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	margin: 0 auto;
-	min-height: 100vh;
+	padding-top: 35vh;
 }
 
-/* Canvas positions */
 
 .content__inner {
-	grid-area: 1 / 1 / 1 / 1;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	align-content: center;
 }
 
 
@@ -112,7 +102,7 @@ header nav li:hover a{
 	font-weight: normal;
     color: #fff;
     font-family: 'Raleway', sans-serif;
-	text-align: center;
+
 	margin: 0;
 	pointer-events: none;
 }
@@ -120,7 +110,7 @@ header nav li:hover a{
 .content__subtitle {
 	font-size: 1.25em;
     color: #fff;
-	padding: 0.45em 0.5em;
+	padding: 0.45em 0;
 	line-height: 1;
 	margin: 0;
 	letter-spacing: 0.5em;
@@ -200,6 +190,5 @@ header nav li:hover a{
 #about {
 	background-color: #fff;
 	height: 70vh;
-	margin-top: 0;
-	padding: 0;
+
 }
