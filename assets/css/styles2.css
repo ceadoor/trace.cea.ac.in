@@ -1,0 +1,16 @@
+header .navbar-brand img
+{
+    width: 72px;
+}
+section
+{
+    padding: 120px 0px;
+}
+#gallery .pad-10
+{
+    padding-top: 20px;
+}
+#contact
+{
+    padding-bottom: 0;
+}
