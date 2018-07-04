@@ -28,7 +28,7 @@ body {
 
 #container {
     width: 86%;
-    margin: 10px 7%;
+    margin: 0 7%;
 }
 
 /* ------------------------------------------- */
@@ -102,7 +102,6 @@ header nav li:hover a{
 	font-weight: normal;
     color: #fff;
     font-family: 'Raleway', sans-serif;
-
 	margin: 0;
 	pointer-events: none;
 }
@@ -191,4 +190,32 @@ header nav li:hover a{
 	background-color: #fff;
 	height: 70vh;
 
+
+}
+.ab1, .ab2 {
+	padding: 20px 0;
+}
+
+.ab1 {
+	width: 43%;
+	float: left;
+}
+
+.ab1 p {
+	text-align: justify;
+}
+
+.ab1 h2 {
+	margin-top: 0;
+}
+
+.ab2 {
+	width: 50%;
+	float: left;
+	padding-left: 7%;
+
+}
+
+.ab2 img {
+	max-width: 100%;
 }
