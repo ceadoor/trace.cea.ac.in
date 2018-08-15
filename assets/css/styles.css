@@ -330,6 +330,7 @@ header nav li:hover a{
 	font-size: 100%;
 	padding-bottom: 70px;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -337,19 +338,24 @@ header nav li:hover a{
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0 4px;
 }
 
+.row img {
+	max-width: 25%;
+}
+
+/*
 .column {
-	flex: 25%;
 	max-width: 25%;
 	padding: 0 4px;
 }
+
 
 .column img {
 	margin-top: 8px;
 	
 }
+*/
 
 /* ------------------------------------------- */
 
