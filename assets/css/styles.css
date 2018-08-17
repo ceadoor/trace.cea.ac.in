@@ -4,14 +4,14 @@ file 'LICENSE.txt', which is part of this source code package.
 */
 /*
     Created on : 	 Jan 8, 2018, 7:42:46 PM
-    Contributors :   jobinrjohnson, alvinzach, prasanth_omanakuttan, jimmy, ashikmeerankutty, abhijithvijayan,
+    Contributors :   jobinrjohnson, alvinzach, ashikmeerankutty, abhijithvijayan, jimmypappachan,
 */
 
 /* ------------------------------------------- */
 
 body, html {
     margin: 0;
-	padding: 0;
+	padding: 0; 	
 	overflow-x: hidden;
 	height: 100%;
 }
@@ -34,14 +34,14 @@ body {
 	margin: 0 7%;
 }
 
-/* ------------------------------------------- */
+/* ------------OBSOLETE-------------------- 
 
 header {
     top: 0 !important;
     position: fixed;
     background: #0d0d0d;
 	width: 100%;
-	z-index: 1;    /* to position the header to the top of all */
+	z-index: 1;    /* to position the header to the top of all 
 }
 
 header nav ul {
@@ -137,6 +137,7 @@ header nav li:hover a{
 
 .logo-hover img {
 	transition: all .2s ease-in-out;
+	width: 72px;
 }
 .dejavu img {
 	transition: all .3s ease-in-out !important;
@@ -373,7 +374,7 @@ footer {
 	height: 43vh;										/* Fix this */
 }
 
-#common {
+#contact {
 	height: 100%;
 }
 
