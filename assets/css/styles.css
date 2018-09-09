@@ -1,0 +1,679 @@
+/*
+This file is subject to the terms and conditions defined in
+file 'LICENSE.txt', which is part of this source code package.
+*/
+/*
+    Created on : 	 Jan 8, 2018, 7:42:46 PM
+    Contributors :   jobinrjohnson, alvinzach, prasanth_omanakuttan, jimmy, ashikmeerankutty, abhijithvijayan,
+*/
+
+/* ------------------------------------------- */
+
+body, html {
+    margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+html, body, header, nav, section, div,
+h1, h2, h3, p, ul, li, button, a, img,
+span {
+    transition: all .2s ease-out;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+	color: #000;
+}
+
+#container {
+    width: 86%;
+	margin: 0 7%;
+}
+
+/* ------------------------------------------- */
+
+header {
+    top: 0 !important;
+    position: fixed;
+    background: #0d0d0d;
+	width: 100%;
+	z-index: 1;    /* to position the header to the top of all */
+}
+
+header nav ul {
+    list-style-type: none;
+	float: right;  
+	padding: 18px 5% 0 0;
+}
+
+header img {
+    float: left;
+    margin: 3px 0 3px 9%;
+}
+
+header nav li{
+    text-decoration: none;
+    float: left;
+    padding: 0 30px;
+    letter-spacing: 3px;
+    font-weight: 800;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+header nav a {
+    text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+	color: #fff;
+}
+
+header nav li:hover a{
+	border-bottom: 2px solid #fff;
+}
+
+/* -------------PRELOADER------------- */
+
+.cube1, .cube2 {
+	background-color: #fff;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 48%;
+	left: 48%;
+	-webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+	animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+
+.cube2 {
+	-webkit-animation-delay: -0.9s;
+	animation-delay: -0.9s;
+}
+
+@-webkit-keyframes sk-cubemove {
+	25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+	50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+	75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+	100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes sk-cubemove {
+	25% {
+		transform: translateX(42px) rotate(-90deg) scale(0.5);
+		-webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
+	} 50% {
+		transform: translateX(42px) translateY(42px) rotate(-179deg);
+		-webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
+	} 50.1% {
+		transform: translateX(42px) translateY(42px) rotate(-180deg);
+		-webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
+	} 75% {
+		transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+		-webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5);
+	} 100% {
+		transform: rotate(-360deg);
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+/* ---HIDES THE LOADING ELEMENTS FOR THE SPINNER--- */
+
+.spinner-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000;
+	z-index: 999999;
+}
+
+/* ------------EFFECTS--------------- */
+
+.logo-hover img {
+	transition: all .2s ease-in-out;
+}
+.dejavu img {
+	transition: all .3s ease-in-out !important;
+}
+.logo-hover:hover img {
+	transform: scale(1.1);
+}
+.dejavu:hover img {
+	transform: scale(1.08);
+}
+
+/* ---------------HOME PAGE-------------------- */
+
+#home {
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.05)), url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+	background-size: cover;
+}
+
+.content {
+	padding-top: 20em;
+}
+
+.content__inner {
+	display: flex;
+	flex-direction: column;
+}
+								/* FIX CONTENT OVERLAPPING ON SMALL SCREENS */
+
+.content__title {
+	font-size: 10vw;
+	font-weight: 700;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+	margin: 0;
+	pointer-events: none;
+}
+
+.content__subtitle {
+	font-size: 1.26em;
+    color: #fff;
+	padding-top: 0.45em;
+	line-height: 1;
+	margin: 0;
+	letter-spacing: 0.5em;
+	text-indent: 0.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* ------------ABOUT PAGE----------------- */
+
+#about {
+	/* -- */
+}
+
+.abc {
+	clear: both;
+	padding: 2em 0;
+	height: 100%;
+	color: #303030;
+	background-color: #fff;
+}
+
+.ab1 {
+	width: 43%;
+	float: left;
+	color: #000;
+}
+
+.ab1 p {
+	text-align: justify;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #303030;
+}
+
+.ab1 h2 {
+	text-align: center;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 36px;
+	line-height: 40px;
+}
+
+.ab1 h4 {
+	text-align: center;
+	font-size: 1.1em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+.ab1 a {
+	text-align: center;
+	border: 2px solid #303030;
+	color: #303030;
+	padding: 10px 20px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-family: 'Raleway', sans-serif;
+	background-color: #fff;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+.ab1 a:hover {
+	background-color: #303030;
+	color: #fff;
+}
+
+
+.line-separator hr {
+	display: block;
+	text-align: center;
+	max-width: 20%;
+	padding: 0 10%;
+	color: #303030;
+}
+
+.ab2 {
+	width: 50%;
+	float: left;
+	padding-left: 7%;
+	height: 100%;
+}
+
+.ab2 img {
+	height: auto;
+	max-width: 100%;
+	padding-bottom: 2em;
+}
+
+/* -----------FEATURES PAGE---------------- */
+
+#features {
+	clear: both;
+	color: #fff;	
+
+	min-height: 30vh;									/* FIX THIS */
+	background-color: #000 !important;
+}
+
+.three {
+	background-color: #000 !important;
+}
+
+.d1, .d2, .d3 {
+	float: left;
+	text-align: center;
+	width: 33%;
+	padding-top: 25px;
+	padding-bottom: 20px; 
+	height: 100%;
+	background-color: #000 !important;
+}
+
+.d1 {
+	padding-left: 10%;
+}
+
+.d3 {
+	padding-right: 10%;
+}
+
+.d2 {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.d1 p, .d2 p, .d3 p {
+	line-height: 25px;
+}
+
+.ico {
+	width: 38px;
+	height: 38px;
+}
+
+/* -------------GALLERY PAGE--------------- */
+
+#gallery {
+	clear: both;
+	padding: 1.5em 0;
+	background-color: #fff;
+	color: #000;
+}
+
+#gallery h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 45px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0;
+}
+
+#gallery p {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column {
+	height: 100%;
+	padding: .5em 0 1em 0;
+}
+
+.row img {
+	max-width: 25%;
+	margin-top: 8px;
+	float: left;
+	padding: 0 4px;
+}
+
+/* --------------FOOTER---------------- */
+
+footer {
+	background-color: #000 !important;
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	padding-bottom: 2em;
+
+	height: 43vh;										/* Fix this */
+}
+
+#common {
+	height: 100%;
+}
+
+.f1, .f2, .f3 {
+	float: left;
+	width: 33%;
+	padding-top: 45px;
+	padding-bottom: 20px; 
+
+	background-color: #000;
+}
+
+.f1 {
+	padding-left: 10%;
+}
+
+.f1 h2 {
+	font-size: 2.2em;
+}
+
+.f1 p, .f3 p{
+	color: #999999;
+}
+
+.f2 {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.f2 h2 {
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
+.f2 ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.f2 ul li {
+	line-height: 25px;
+
+}
+
+.f2 ul li a {
+	color: #999999 !important;
+	text-decoration: none;
+}
+
+.f2 ul li a:hover, .f3 a:hover {
+	color: #fff !important;
+}
+
+.f3 {
+	padding-right: 10%;
+	line-height: 25px;
+}
+
+.f3 h2 {
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
+.f3 p {
+	margin: 0;
+}
+
+.f3 a {
+	text-decoration: none;
+	color: #999999;
+	padding-left: 10px;
+}
+
+.icons {
+	width: 15px;
+	height: 15px;
+	margin-top: 7px;
+	color: #fff;
+	margin-right: 10px;
+}
+
+/* ------------------------------------------- */
+
+																	/* TODO */
+/* ----------------RESPONSIVENESS------------- */
+
+
+/* -For Low Resolution Tablets, Mobiles (Landscape)- */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* -For Most of the Smartphones Mobiles (Portrait)- */   
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+	.content__subtitle {
+		text-align: left;
+	}
+	.ab1, .ab2 {
+		width: 100%;
+	}
+	.ab2 {
+		padding-left: 0;
+	}
+	.d1, .d2, .d3 {
+		width: 100%;
+		padding: 0.1em 5%;
+	}
+	.row img {
+		max-width: 100%;
+	}
+	.f1, .f2, .f3 {
+		width: 100%;
+		padding: 0 8%;
+	}
+	.f3 {
+		padding-bottom: 1.5em;		
+	}
+
+}
+
+/* --------------------GALAXY S5---------------------- */
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+
+	.content__subtitle {
+		text-align: left;
+	}
+	.ab1, .ab2 {
+		width: 100%;
+	}
+	.ab2 {
+		padding-left: 0;
+	}
+	.d1, .d2, .d3 {
+		width: 100%;
+		padding: 0.1em 5%;
+	}
+	.row img {
+		max-width: 100%;
+	}
+	.f1, .f2, .f3 {
+		width: 100%;
+		padding: 0 8%;
+	}
+	.f3 {
+		padding-bottom: 1.5em;		
+	}
+
+}
+
+/* ----------------PIXEL 2, 2XL------------------------- */
+
+@media screen and (min-width: 376px) and (max-width: 412px) {
+
+	.content__subtitle {
+		text-align: left;
+	}
+	.ab1, .ab2 {
+		width: 100%;
+	}
+	.ab2 {
+		padding-left: 0;
+	}
+	.d1, .d2, .d3 {
+		width: 100%;
+		padding: 0.1em 5%;
+	}
+	.row img {
+		max-width: 100%;
+	}
+	.f1, .f2, .f3 {
+		width: 100%;
+		padding: 0 8%;
+	}
+	.f3 {
+		padding-bottom: 1.5em;		
+	}
+
+}
+
+/* ----------------IPHONE 5/SE-------------------------- */
+
+@media screen and (max-width: 320px) {
+
+	.content__subtitle {
+		text-align: left;
+	}
+	.ab1, .ab2 {
+		width: 100%;
+	}
+	.ab2 {
+		padding-left: 0;
+	}
+	.d1, .d2, .d3 {
+		width: 100%;
+		padding: 0.1em 5%;
+	}
+	.row img {
+		max-width: 100%;
+	}
+	.f1, .f2, .f3 {
+		width: 100%;
+		padding: 0 8%;
+	}
+	.f3 {
+		padding-bottom: 1.5em;		
+	}
+
+}
+
+/* --------------------IPHONE 6,7,8, X----------------- */
+
+@media screen and (min-width: 361px) and (max-width: 375px) {
+
+	.content__subtitle {
+		text-align: left;
+	}
+	.ab1, .ab2 {
+		width: 100%;
+	}
+	.ab2 {
+		padding-left: 0;
+	}
+	.d1, .d2, .d3 {
+		width: 100%;
+		padding: 0.1em 5%;
+	}
+	.row img {
+		max-width: 100%;
+	}
+	.f1, .f2, .f3 {
+		width: 100%;
+		padding: 0 8%;
+	}
+	.f3 {
+		padding-bottom: 1.5em;		
+	}
+
+}
+
+/* -------------------IPHONE 6,7,8 PLUS------------------------ */
+
+@media screen and (min-width: 413px) and (max-width: 414px) {
+
+	.content__subtitle {
+		text-align: left;
+	}
+	.ab1, .ab2 {
+		width: 100%;
+	}
+	.ab2 {
+		padding-left: 0;
+	}
+	.d1, .d2, .d3 {
+		width: 100%;
+		padding: 0.1em 5%;
+	}
+	.row img {
+		max-width: 100%;
+	}
+	.f1, .f2, .f3 {
+		width: 100%;
+		padding: 0 8%;
+	}
+	.f3 {
+		padding-bottom: 1.5em;		
+	}
+
+}
+
+/* ------------------Tablets, Ipads (portrait)----------------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+/* ------------------Tablets, Ipads (landscape)---------------- */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/* ----------------------Laptops, Desktops--------------------- */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* ---------------------------Desktops-------------------------- */
+
+@media (min-width: 1281px) {
+
+}
+
+/* reference: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
+
+
+
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
