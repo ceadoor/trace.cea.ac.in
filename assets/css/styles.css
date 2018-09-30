@@ -39,25 +39,18 @@ body {
 header {
     top: 0 !important;
     position: fixed;
-    background: #0d0d0d;
+    background-color: #0d0d0d;
 	width: 100%;
 	z-index: 1;    /* to position the header to the top of all */
 }
 
 header nav ul {
     list-style-type: none;
-	float: right;  
-	padding: 18px 5% 0 0;
 }
 
-header img {
-    float: left;
-    margin: 3px 0 3px 9%;
-}
 
 header nav li{
     text-decoration: none;
-    float: left;
     padding: 0 30px;
     letter-spacing: 3px;
     font-weight: 800;
@@ -74,7 +67,7 @@ header nav a {
 }
 
 header nav li:hover a{
-	border-bottom: 2px solid #fff;
+	border-bottom: 1px solid #fff;
 }
 
 /* -------------PRELOADER------------- */
